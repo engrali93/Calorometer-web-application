@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Calories Meter" content="">
+    <meta name="Muhammad Ali" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Calories Meter</title>
+
+    <!--Template based on URL below-->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <!-- Place your stylesheet here-->
+     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
+
+</head>
+
+<body>
+    <style>
+        body{
+
+            background-image: linear-gradient(rgba(73, 71, 71, 0.822), rgba(83, 80, 80, 0.897)),url(img/1151502.jpg);
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: 100% 500%;
+
+
+
+        }
+    </style>
+
+<section id="nav-bar">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#"><span style="color:green;font-weight:bold">M</span>acronutro-<span style="font-style: italic; font-size:35px">meter</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+
+
+        </ul>
+
+    </div>
+</nav>
+<!--------------------------main body------------------------------>
+</section>
+    <section id="main">
+        <div class="text-center mt-5 pt-5">
+            <h1>Life is a gift, eat decisively!</h1>
+            <p style="color: white" >This tool is design to calculate the marcos of your food.<br> All you need to do is simply type in your food and click 'Search'.</p>
+        </div>
+        <div class="request">
+            <form action = "http://localhost:5000/result" method = "post">
+
+                <p>Enter the food <input type = "text" name = "nm" />  <input type = "submit" class="btn btn-success" value = "Search" /></p>
+
+             </form>
+        </div>
+        <div class="row">
+
+            <div class="col-md-3">
+                <i class="fas fa-utensils"></i>
+                <h4>Calories:</h4>
+                {% if calo%}
+                <p style="color: white">{{calo}} {{calou}}</p>
+                {% endif %}
+            </div>
+            <div class="col-md-3">
+                <i class="fas fa-cookie-bite"></i>
+                <h4>Carbs:</h4>
+                {% if calo%}
+                <p style="color: white">{{carbq}} {{carbu}}</p>
+                {% endif %}
+            </div>
+
+            <div class="col-md-3">
+                <i class="fas fa-seedling"></i>
+                <h4>Protein:</h4>
+                {% if calo%}
+                <p style="color: white">{{proq}} {{prou}}</p>
+                {% endif %}
+            </div>
+            <div class="col-md-3">
+                <i class="fas fa-tint-slash"></i>
+                <h4>Fat:</h4>
+                {% if calo%}
+                <p style="color: white">{{fatq}} {{fatu}}</p>
+                {% endif %}
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

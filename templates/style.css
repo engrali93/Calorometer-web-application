@@ -1,0 +1,71 @@
+
+
+/***********NAV****************/
+#nav-bar{
+    margin-top: 0;
+}
+.navbar .navbar-brand {
+    font-size: 40px;
+    font-family: comic ;
+    color: white;
+
+}
+.navbar .navbar-nav .nav-item {
+
+    font-size: 25px;
+    font-family: Gothic;
+}
+.navbar .navbar-nav .nav-item a:hover{
+
+   color: green;
+
+}
+#main{
+    padding-top: 10px;
+}
+#main .text-center h1{
+    color: white;
+    font-style: italic;
+    font-family: cursive;
+    font-size: 50px;
+}
+#main .text-center p{
+    margin-top: 20px;
+    color: green;
+    font-style: bold;
+    font-family: cursive;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.287);
+}
+#main .request p{
+    padding-top: 20px;
+    width: 100%;
+    font-weight: 700;
+    color: blanchedalmond;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-top: 2%;
+    margin-left: 32%;
+}
+.request .btn {
+    size: 40px;
+
+}
+.row{
+    padding-top: 10px;
+    border: 1px solid white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.397);
+
+}
+.row .fas{
+    font-size: 60px;
+    color: rgb(139, 66, 6);
+
+}
+.row h4{
+    padding-top: 15px;
+    color: rgb(0, 153, 0);
+}
+
+
