@@ -5,4 +5,4 @@ this application using opensource API and calculate the calories of the given fo
 
 
 ## for live demo
-vist http://engrali93.pythonanywhere.com/
+visit http://engrali93.pythonanywhere.com/
